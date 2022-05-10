@@ -22,14 +22,11 @@ function ColorContainer(props) {
       style={{
         backgroundColor: `hsl(${props.hue}, ${props.saturation}, ${props.lightness})`,
       }}
-    >
-      Generated Color:{' '}
-      {hslToHex(
-        Number(props.hue),
-        Number(props.saturation.slice(0, -1)),
-        Number(props.lightness.slice(0, -1)),
-      )}
-    </div>
+    >{`Generated Color: ${hslToHex(
+      Number(props.hue),
+      Number(props.saturation.slice(0, -1)),
+      Number(props.lightness.slice(0, -1)),
+    )}`}</div>
   );
 }
 
