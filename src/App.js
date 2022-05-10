@@ -23,7 +23,7 @@ function ColorContainer(props) {
         backgroundColor: `hsl(${props.hue}, ${props.saturation}, ${props.lightness})`,
       }}
     >
-      hsl({props.hue}, {props.saturation}, {props.lightness}), Generated Color:{' '}
+      Generated Color:{' '}
       {hslToHex(
         Number(props.hue),
         Number(props.saturation.slice(0, -1)),
